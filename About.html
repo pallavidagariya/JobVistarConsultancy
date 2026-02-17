@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - JobVistar HR Consultancy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">JobVistar HR</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+@{
+    ViewBag.Title = "About Us";
+}
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">About JobVistar HR Consultancy</h2>
+        <p class="text-muted">Your trusted recruitment partner</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <strong>JobVistar HR Consultancy</strong> is a professional recruitment
+                and talent acquisition firm dedicated to helping organizations
+                find the right talent at the right time.
+            </p>
+
+            <p>
+                We specialize in delivering customized hiring solutions for startups,
+                SMEs, and corporates across multiple industries.
+                Our focus is on quality, speed, and long-term partnerships.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✔ Single / Lateral Hiring</li>
+                <li class="list-group-item">✔ Bulk & Mass Recruitment</li>
+                <li class="list-group-item">✔ IT Recruitment Solutions</li>
+                <li class="list-group-item">✔ Non-IT & Corporate Hiring</li>
+                <li class="list-group-item">✔ Startup Hiring Support</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h5>Our Mission</h5>
+        <p>
+            To bridge the gap between talent and opportunity by providing
+            reliable, efficient, and ethical recruitment services.
+        </p>
+
+        <h5>Our Vision</h5>
+        <p>
+            To become a trusted HR consultancy brand known for quality hiring
+            and client satisfaction.
+        </p>
+    </div>
+</div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        © 2026 JobVistar HR Consultancy | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+ <style>
+/* Remove default body spacing */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar fix */
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+/* HERO SECTION FIX */
+.hero {
+    height: 100vh;
+    background: url('Images/hr-cover.jpeg') no-repeat center center/cover;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(0,0,0,0.65);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+ </style>
